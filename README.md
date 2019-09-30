@@ -1,4 +1,4 @@
-# project
+# bodri-bakery
  
 * Projektötlet
 
