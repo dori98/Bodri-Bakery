@@ -1,5 +1,5 @@
 # Bodri-Bakery
- * Github (/dori98/Bodri-Bakery)
+* Github (/dori98/Bodri-Bakery)
 
 ![Database UML diagram] (/images/uml_bodri-bakery.png)
 
