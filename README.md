@@ -86,11 +86,11 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 ## Diagrammok
 
 
-![uml diagram](images/uml_bodri-bakery.PNG)
+![uml diagram](images/uml_bodri-bakery.png)
 
 
 
-![Szekvencia diagram](images/szekvencia.PNG)
+![Szekvencia diagram](/images/szekvencia.png)
 
 
 
