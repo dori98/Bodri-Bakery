@@ -46,8 +46,8 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
  	* kulcsszó: egy rövid (1-2 szavas) kifejezés, amely összefüggésbe hozható recepttel
  	* .zip fájl: tömörített, több fájlt összefogó archívum
 
-IDE: NetBeans ,IntelliJ
-*Database: H2
+* IDE: NetBeans ,IntelliJ
+* Database: H2
 Használt technológiák:
 *	Java Spring Boot technológia 
 *	MVC modell
@@ -57,34 +57,34 @@ Használt technológiák:
 *	apache commons
 
 Könyvtárstruktúrák:
-*controllers
-  	*ReceiptController
-  	*UserController
-*entities
- 	 *customized
-   		 *CustomizedReceipt
-  	* Ingredient
+* controllers
+  	* ReceiptController
+  	* UserController
+* entities
+ 	 * customized
+   		 * CustomizedReceipt
+  	 * Ingredient
  	 * Receipt
  	 * ReceiptDescription
  	 * ReceiptIngredient
  	 * User
-*repositories
+* repositories
  	 * ReceiptRepository
  	 * UserRepository
-*response
+* response
  	 * UserResponse
-*security
+* security
  	 * AuthenticatedUser
  	 * CustomBasicAuthenticationEntryPoint
  	 * MyUseDetailsService
  	 * WebSecurityConfig
-*services
+* services
 	
 Végpontok:
-*GET/receipts : publikus receptek lekérdezése
-*GET/users : userek lekérdezése
-*POST/users/register  :  regisztrációs adatok elküldése
-*POST/login : belépés adatok elküldése
+* GET/receipts : publikus receptek lekérdezése
+* GET/users : userek lekérdezése
+* POST/users/register  :  regisztrációs adatok elküldése
+* POST/login : belépés adatok elküldése
 
  	
 
