@@ -58,33 +58,33 @@ Használt technológiák:
 
 Könyvtárstruktúrák:
 *	controllers
-  *	ReceiptController
-  *	UserController
-*	entities
-  *	customized
-    *	CustomizedReceipt
-  * Ingredient
-  *	Receipt
-  *	ReceiptDescription
-  *	ReceiptIngredient
-  *	User
-*	repositories
-  *	ReceiptRepository
-  *	UserRepository
-*	response
-  *	UserResponse
-*	security
-  *	AuthenticatedUser
-  *	CustomBasicAuthenticationEntryPoint
-  *	MyUseDetailsService
-  *	WebSecurityConfig
-*	services
+  	*	ReceiptController
+  	*	UserController
+*entities
+ 	 *	customized
+   		 *CustomizedReceipt
+  	* Ingredient
+ 	 * Receipt
+ 	 * ReceiptDescription
+ 	 * ReceiptIngredient
+ 	 * User
+*repositories
+ 	 * ReceiptRepository
+ 	 * UserRepository
+*response
+ 	 * UserResponse
+*security
+ 	 * AuthenticatedUser
+ 	 * CustomBasicAuthenticationEntryPoint
+ 	 * MyUseDetailsService
+ 	 * WebSecurityConfig
+*services
 	
 Végpontok:
-GET/receipts : publikus receptek lekérdezése
-GET/users : userek lekérdezése
-POST/users/register  :  regisztrációs adatok elküldése
-POST/login : belépés adatok elküldése
+*GET/receipts : publikus receptek lekérdezése
+*GET/users : userek lekérdezése
+*POST/users/register  :  regisztrációs adatok elküldése
+*POST/login : belépés adatok elküldése
 
  	
 
