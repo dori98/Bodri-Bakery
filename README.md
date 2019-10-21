@@ -83,10 +83,10 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 * POST/users/register  :  regisztrációs adatok elküldése
 * POST/login : belépés adatok elküldése
 
-## ez
+## Diagrammok
 
 
-![Database UML diagram] (/images/uml_bodri-bakery.PNG)
+ (/images/uml_bodri-bakery.PNG)
 
 
 
