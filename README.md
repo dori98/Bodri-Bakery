@@ -83,6 +83,8 @@ Végpontok:
 * POST/users/register  :  regisztrációs adatok elküldése
 * POST/login : belépés adatok elküldése
 
+* Github (dori98/Bodri-Bakery)
+
 ![Database UML diagram] (/images/uml_bodri-bakery.png)
 
 
