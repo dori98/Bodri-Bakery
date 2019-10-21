@@ -86,6 +86,7 @@ Végpontok:
 * POST/users/register  :  regisztrációs adatok elküldése
 * POST/login : belépés adatok elküldése
 
-! [Database UML diagram] (/images/uml_bodri-bakery.png)
+![Database UML diagram] (/images/uml_bodri-bakery.png)
+![Szekvencia diagram] (/images/szekvencia.png)
 
 
