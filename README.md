@@ -1,11 +1,5 @@
-# Bodri-Bakery
-* Github (/dori98/Bodri-Bakery)
+## Bodri-Bakery
 
-![Database UML diagram] (/images/uml_bodri-bakery.png)
-
-
-
-![Szekvencia diagram] (/images/szekvencia.png)
 * Projektötlet
 
   Az alapötlet egy Bodri Bakery nevű receptes oldal lenne.
@@ -51,7 +45,7 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 
 * IDE: NetBeans ,IntelliJ
 * Database: H2
-*Használt technológiák:
+* Használt technológiák:
 	* Java Spring Boot technológia 
 	* MVC modell
 	* REST API
@@ -59,7 +53,7 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 	* lombok
 	* apache commons
 
-Könyvtárstruktúrák:
+## Könyvtárstruktúrák:
 * controllers
   	* ReceiptController
   	* UserController
@@ -83,7 +77,7 @@ Könyvtárstruktúrák:
  	 * WebSecurityConfig
 * services
 	
-Végpontok:
+## Végpontok:
 * GET/receipts : publikus receptek lekérdezése
 * GET/users : userek lekérdezése
 * POST/users/register  :  regisztrációs adatok elküldése
