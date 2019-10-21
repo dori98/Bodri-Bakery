@@ -6,8 +6,7 @@
 Regisztráció nélkül a felhasználó megnézheti az addig feltöltött recepteket , regisztráció után pedig feltöltheti saját receptjeit  is.
 A feltöltött recepteket be lehet sorolni kategóriákba gyerekbarát elkészítés  és időtartam  alapján.
 A receptek lehetnek publikusak vagy privátak.
-A receptekhez rendelhetők kulcsszavak és azok alapján lehet keresni(süti neve és hozzávalók). 
-A recepteket lehet értékelni finomság alapján.
+
 A moderátorok egy nem az oldalhoz illő, illetve nem szalonképes recepteket priváttá tehetnek, amely többé nem állítható vissza publikusra a felhasználó által.
 Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 
@@ -27,10 +26,8 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
  	* Recepthez tartozhat:
       * név
       * hozzávalók
-      * leírás
-      * kulcsszavak
- 	* A receptek lehetnek publikusak vagy privátok
- 	* Több recept feltöltése egyszerre, egyenként vagy .zip állományban
+      * leírás      
+ 	* A receptek lehetnek publikusak vagy privátok 	
  * Moderátorok által elérhető funkciók:
  	* Nem szalonképes publikus receptek véglegesen priváttá állítása
 * Adminisztrátor:
@@ -43,8 +40,8 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
  	* Jelszavas azonosítás, jelszavak biztonságos tárolása
  	* Privát receptek biztonságos elrejtése a látogatók elől
 * Szakterületi fogalomjegyzék
- 	* kulcsszó: egy rövid (1-2 szavas) kifejezés, amely összefüggésbe hozható recepttel
- 	* .zip fájl: tömörített, több fájlt összefogó archívum
+ 	* recept: egy édes vagy sós sütemény elkészítésének a menetét leíró jegyzet
+ 	
 
 * IDE: NetBeans ,IntelliJ
 * Database: H2
@@ -86,9 +83,9 @@ Végpontok:
 * POST/users/register  :  regisztrációs adatok elküldése
 * POST/login : belépés adatok elküldése
 
-[Database UML diagram] (/images/uml_bodri-bakery.png)
+![Database UML diagram] (/images/uml_bodri-bakery.png)
 
-##szekvencia
+
 
 ![Szekvencia diagram] (/images/szekvencia.png)
 
