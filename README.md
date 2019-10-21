@@ -48,13 +48,13 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 
 * IDE: NetBeans ,IntelliJ
 * Database: H2
-Használt technológiák:
-*	Java Spring Boot technológia 
-*	MVC modell
-*	REST API
-*	H2
-*	lombok
-*	apache commons
+*Használt technológiák:
+	* Java Spring Boot technológia 
+	* MVC modell
+	* REST API
+	* H2
+	* lombok
+	* apache commons
 
 Könyvtárstruktúrák:
 * controllers
