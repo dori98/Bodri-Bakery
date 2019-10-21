@@ -47,7 +47,7 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
  	* .zip fájl: tömörített, több fájlt összefogó archívum
 
 IDE: NetBeans ,IntelliJ
-Database: H2
+*Database: H2
 Használt technológiák:
 *	Java Spring Boot technológia 
 *	MVC modell
@@ -57,11 +57,11 @@ Használt technológiák:
 *	apache commons
 
 Könyvtárstruktúrák:
-*	controllers
-  	*	ReceiptController
-  	*	UserController
+*controllers
+  	*ReceiptController
+  	*UserController
 *entities
- 	 *	customized
+ 	 *customized
    		 *CustomizedReceipt
   	* Ingredient
  	 * Receipt
