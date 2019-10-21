@@ -86,7 +86,7 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 ## Diagrammok
 
 
-![uml diagram](/images/uml_bodri-bakery.PNG)
+![uml diagram](/Bodri-Bakery/images/uml_bodri-bakery.PNG)
 
 
 
