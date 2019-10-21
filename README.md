@@ -86,7 +86,7 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 ## ez
 
 
-![Database UML diagram] (/images/uml_bodri-bakery.PNG)
+![Database UML diagram] (/Bodri-Bakery/images/uml_bodri-bakery.PNG)
 
 
 
