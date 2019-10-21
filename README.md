@@ -1,6 +1,6 @@
 ## Bodri-Bakery
 
-* Projektötlet
+## Projektötlet
 
   Az alapötlet egy Bodri Bakery nevű receptes oldal lenne.
 Regisztráció nélkül a felhasználó megnézheti az addig feltöltött recepteket , regisztráció után pedig feltöltheti saját receptjeit  is.
@@ -84,13 +84,13 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 * POST/login : belépés adatok elküldése
 
 ## ez
-* Github (/dori98/Bodri-Bakery)
-
-![Database UML diagram] (/images/uml_bodri-bakery.png)
 
 
+![Database UML diagram] (/images/uml_bodri-bakery.PNG)
 
-![Szekvencia diagram] (/images/szekvencia.png)
+
+
+![Szekvencia diagram] (/images/szekvencia.PNG)
 
 
 
