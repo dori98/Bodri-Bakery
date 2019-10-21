@@ -1,5 +1,11 @@
 # Bodri-Bakery
- 
+ * Github (/dori98/Bodri-Bakery)
+
+![Database UML diagram] (/images/uml_bodri-bakery.png)
+
+
+
+![Szekvencia diagram] (/images/szekvencia.png)
 * Projektötlet
 
   Az alapötlet egy Bodri Bakery nevű receptes oldal lenne.
@@ -83,12 +89,6 @@ Végpontok:
 * POST/users/register  :  regisztrációs adatok elküldése
 * POST/login : belépés adatok elküldése
 
-* Github (/dori98/Bodri-Bakery)
 
-![Database UML diagram] (/images/uml_bodri-bakery.png)
-
-
-
-![Szekvencia diagram] (/images/szekvencia.png)
 
 
