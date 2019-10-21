@@ -87,6 +87,8 @@ Végpontok:
 * POST/login : belépés adatok elküldése
 
 ![Database UML diagram] (/images/uml_bodri-bakery.png)
+
+##szekvencia
 ![Szekvencia diagram] (/images/szekvencia.png)
 
 
