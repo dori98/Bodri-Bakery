@@ -5,12 +5,14 @@
  */
 package hu.elte.bodribakery.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Data
@@ -30,9 +32,6 @@ public class Receipt {
     @Column(nullable = false)
     private String name;
 
-    @Column(name = "user_id", nullable = false)
-    private Integer userId;
-
     @Column(nullable = false)
     private String difficulty;
 
@@ -41,6 +40,15 @@ public class Receipt {
 
     @Column(nullable = false)
     private Boolean visibility;
+
+    private String description;
+
+    @ManyToMany
+    private List<Ingredient> ingredients;
+
+    @JsonIgnore
+    @ManyToOne
+    private User user;
 
 
 

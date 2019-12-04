@@ -6,8 +6,6 @@
 package hu.elte.bodribakery.repositories;
 
 import hu.elte.bodribakery.entities.Receipt;
-import hu.elte.bodribakery.entities.customized.CustomizedReceipt;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -20,6 +18,7 @@ import java.util.List;
 @Repository
 public interface ReceiptRepository extends CrudRepository<Receipt, Integer> {
 
+    /*
     @Query(value = "SELECT new hu.elte.bodribakery.entities.customized.CustomizedReceipt(r.id, r.name, r.difficulty, rd.description, i.name)" +
             "FROM Receipt r\n" +
             "INNER JOIN ReceiptDescription rd\n" +
@@ -29,8 +28,10 @@ public interface ReceiptRepository extends CrudRepository<Receipt, Integer> {
             "INNER JOIN Ingredient i\n" +
             "ON i.id = ri.ingredientId\n" +
             "WHERE r.visibility = true")
-    List<CustomizedReceipt> findVisibleReceipts();
+            */
+    //List<CustomizedReceipt> findVisibleReceipts();
     List<Receipt> findByUserId(Integer id);
+    List<Receipt> findAllByUserId(Integer id);
 
     //CustomizedReceipt findByMyId(Integer id);
 

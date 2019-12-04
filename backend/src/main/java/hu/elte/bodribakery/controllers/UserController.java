@@ -7,17 +7,14 @@ package hu.elte.bodribakery.controllers;
 
 import hu.elte.bodribakery.entities.User;
 import hu.elte.bodribakery.repositories.UserRepository;
-
-import java.util.List;
-import java.util.Optional;
-import java.util.stream.Collectors;
-
-import hu.elte.bodribakery.response.UserResponse;
-import hu.elte.bodribakery.security.AuthenticatedUser;
+import hu.elte.bodribakery.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
 
 /**
  *
@@ -33,7 +30,8 @@ public class UserController {
     private UserRepository userRepository;
 
     @Autowired
-    private AuthenticatedUser authenticatedUser;
+    private UserService userService;
+
 
     @PostMapping("/users/register")
     public ResponseEntity<User> register(@RequestBody User user) {
@@ -49,13 +47,11 @@ public class UserController {
 
     @PostMapping("login")
     public ResponseEntity login() {
-        return ResponseEntity.ok(authenticatedUser.getUser());
+        return ResponseEntity.ok(userService.getActUser());
     }
 
     @GetMapping("/users")
-    public List<UserResponse> getUsers() {
-        List<User> users = (List<User>) userRepository.findAll();
-
-        return users.stream().map(user -> new UserResponse(user.getId(), user.getUsername(), user.getNickname())).collect(Collectors.toList());
+    public List<User> getUsers() {
+        return userRepository.findAll();
     }
 }

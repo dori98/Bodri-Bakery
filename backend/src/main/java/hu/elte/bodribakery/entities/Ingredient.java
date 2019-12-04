@@ -30,4 +30,7 @@ public class Ingredient {
     @Column(nullable = false)
     private String name;
 
+    //@ManyToMany
+    //private Receipt receipt;
+
 }
