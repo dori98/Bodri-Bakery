@@ -8,7 +8,8 @@ import { AuthService, httpOptions } from './auth.service';
 })
 export class IssueService {
   
-  private issueUrl: string = 'http://localhost:8080/rec';
+  private userUrl: string = 'http://localhost:8080/users';
+  private receiptUrl: string = 'http://localhost:8080/rec';
 
   constructor(
     private http: HttpClient,
@@ -16,15 +17,15 @@ export class IssueService {
   ) { }
 
   getIssues(): Promise<Issue[]> {
-    return this.http.get<Issue[]>(`${this.issueUrl}`, httpOptions).toPromise();
+    return this.http.get<Issue[]>(`${this.userUrl}`, httpOptions).toPromise();
   }
 
   getIssue(id: number): Promise<Issue> {
-    return this.http.get<Issue>(`${this.issueUrl}/${id}`, httpOptions).toPromise();
+    return this.http.get<Issue>(`${this.receiptUrl}/${id}`, httpOptions).toPromise();
   }
 
   createIssue(issue: Issue): Promise<Issue> {
-    return this.http.post<Issue>(`${this.issueUrl}`, issue, httpOptions).toPromise();
+    return this.http.post<Issue>(`${this.receiptUrl}`, issue, httpOptions).toPromise();
   }
 
   /*updateIssue(issue: Issue): Promise<Issue> {

@@ -8,7 +8,7 @@ insert into user(id,username,password,nickname,enabled,role) values (5,'otodik',
 
 
 
-insert into receipt (description,name,user_id,difficulty,salty,visibility) values ('egyeske','Sajtos pogácsa',1,'örökkévalóság',true,true);
+insert into receipt (description,name,user_id,difficulty,salty,visibility) values ('30 dkg lisztet összekeverem a 20 dkg olvasztott vajjal és 1 tojas sargájával, utáa adunk hozzá 2-3 evőkanál tejfölt és 1 tk sót. Ezek után a 30dkg reszelt sajt felét a tésztához gyúrom ,a másik felét félrerakom. Ezek után 1 órára pihenni tesszük a hűtőbe. Az 1 óra elteltével kivesszük és lisztezett vágódeszkán kinyújtjuk és megkenjük a maradék tojás fehérhével és rászórjuk a sajtot. 180 fokos előmelegített sütőben addig sütjük amíg aranybarna nem lesz. Jó sütést :D !','Sajtos pogácsa',1,'örökkévalóság',true,true);
 insert into receipt (description,name,user_id,difficulty,salty,visibility) values ('ketteske','Pizzáscsiga',2,'közepes',true,false);
 insert into receipt (description,name,user_id,difficulty,salty,visibility) values ('harmaska','Virsis csiga',3,'közepes',true,true);
 insert into receipt (description,name,user_id,difficulty,salty,visibility) values ('negyeske','Sajtos pogácsa',3 ,'könnyű',true,false);
@@ -29,10 +29,22 @@ insert into ingredient (id, name) values (4,'eleszto');
 insert into ingredient (id, name) values (5,'viz');
 insert into ingredient (id, name) values (6,'méz');
 insert into ingredient (id, name) values (7,'csoki');
+insert into ingredient (id, name) values (8,'cukor');
+insert into ingredient (id, name) values (9,'cukrozatlan kakaópor');
+insert into ingredient (id, name) values (10,'sütőpor');
+insert into ingredient (id, name) values (11,'só');
+insert into ingredient (id, name) values (12,'sajt');
+insert into ingredient (id, name) values (13,'vaj');
 
 
 insert into RECEIPT_INGREDIENTS (RECEIPT_ID , INGREDIENTS_ID) values (1, 1);
 insert into RECEIPT_INGREDIENTS (RECEIPT_ID , INGREDIENTS_ID) values (1, 2);
+insert into RECEIPT_INGREDIENTS (RECEIPT_ID , INGREDIENTS_ID) values (1, 11);
+insert into RECEIPT_INGREDIENTS (RECEIPT_ID , INGREDIENTS_ID) values (1, 12);
+insert into RECEIPT_INGREDIENTS (RECEIPT_ID , INGREDIENTS_ID) values (1,13 );
+
+
+insert into RECEIPT_INGREDIENTS (RECEIPT_ID , INGREDIENTS_ID) values (2, 2);
 insert into RECEIPT_INGREDIENTS (RECEIPT_ID , INGREDIENTS_ID) values (1, 3);
 insert into RECEIPT_INGREDIENTS (RECEIPT_ID , INGREDIENTS_ID) values (9, 1);
 insert into RECEIPT_INGREDIENTS (RECEIPT_ID , INGREDIENTS_ID) values (9, 6);

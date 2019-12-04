@@ -13,6 +13,7 @@ import hu.elte.bodribakery.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -39,10 +40,10 @@ public class ReceiptController {
         //return receiptRepository.findVisibleReceipts();
     }
     */
-    /*@GetMapping("/rec/{id}")
-    public CustomizedReceipt get(@PathVariable int id){
-        return (receiptRepository.findByMyId(id));
-    }*/
+    @GetMapping("/rec/{id}")
+    public Receipt get(@PathVariable int id){
+        return  receiptRepository.findById(id).get();
+    }
     @GetMapping("/rec")
     public List<Receipt> getUserReceipts(){
         User actUser = userService.getActUser();

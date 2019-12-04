@@ -1,16 +1,21 @@
 
-<h1 class="display-2"> recept</h1>
-<dl class="row">
-  <dt class="col-sm-3">Title</dt>
-  <dd class="col-sm-9">{{ issue.segedrecept }}</dd>
+<h1 class="display-2"> {{issue.name}}</h1>
+<div>
+<h3>Hozzávalók:</h3>
+<p><ng-container *ngFor="let ing of issue.ingredients" >
+  <p>{{ ing.name }}</p>
+</ng-container></p></div>
 
-  <dt class="col-sm-3">Location</dt>
-  <dd class="col-sm-9">{{ issue.nickname }}</dd>
+<div>
+<h3>Leírás:</h3>
+<p>{{issue.description}}</p>
+</div>
+
+<div>
+    <h4>Nehézség:</h4>
+    <p>{{issue.difficulty}}</p>
+</div>
+
   
-  <dt class="col-sm-3">Description</dt>
-  <dd class="col-sm-9">{{ issue.description }}</dd>
-  
-  <dt class="col-sm-3">Status</dt>
-  <dd class="col-sm-9">{{ issue.status }}</dd>
-</dl>
+
 <button mat-raised-button routerLink="/issues">Back</button>

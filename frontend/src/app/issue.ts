@@ -5,5 +5,5 @@ export class Issue {
     public nickname: String ;
     public user_id: number;
     public  segedrecept: Receipt[];
-    
+    public status: String;
 }

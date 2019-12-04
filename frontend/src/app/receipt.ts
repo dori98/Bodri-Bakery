@@ -1,3 +1,5 @@
+import { Ingredient } from './ingredient';
+
 export class Receipt {
     public id : Number;
     public  user_id: Number;
@@ -6,5 +8,5 @@ export class Receipt {
     public salty: Boolean;
     public visibility:Boolean;
     public description: String;
-    public ingredient    
+    public ingredient  : Ingredient[];  
 }

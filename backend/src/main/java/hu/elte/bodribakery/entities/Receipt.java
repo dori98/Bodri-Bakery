@@ -41,9 +41,12 @@ public class Receipt {
     @Column(nullable = false)
     private Boolean visibility;
 
+    @Column(nullable = false,length=213123123)
+
     private String description;
 
     @ManyToMany
+
     private List<Ingredient> ingredients;
 
     @JsonIgnore

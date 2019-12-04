@@ -11,8 +11,7 @@ import { IssueService } from '../issue.service';
 export class IssueDetailComponent implements OnInit {
   
   public issue: Issue = null;
-
-  constructor(
+    constructor(
     private route: ActivatedRoute,
     private issueService: IssueService
   ) { }
