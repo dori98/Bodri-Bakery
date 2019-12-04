@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col">
+      <h1 class="display-2">Receptek</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Alkotó</th>
+            <th scope="col">Receptnév</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let issue of filteredIssues" (click)="onSelectIssue(issue)" [class.table-info]="issue === selectedIssue" >
+            <th scope="row">{{ issue.user_id }}</th>
+            <td>
+              <a >
+                {{issue.nickname}}
+              </a>
+            </td>
+            <td  >
+                <a *ngFor="let receipt of issue.segedrecept" [routerLink]="['/issues', receipt.id]">
+                {{receipt.name}} , </a> </td>
+              
+            <td>
+              <button mat-raised-button color="primary" (click)="onDeleteClick(issue.id)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <status-filter [status]="selectedStatus" (onChange)="onFilterChange($event)"></status-filter>
+  
+  <button mat-raised-button color="primary" (click)="onNewClick()">Új recept</button>
+  <div class="col" *ngIf="selectedIssue">
+    <issue-form [issue]="selectedIssue" (onSubmit)="onFormSubmit($event)"></issue-form>
+  </div>
+
+
+  
+  
+    
+    
+  

@@ -1,0 +1,34 @@
+<mat-toolbar color="primary">
+  <button mat-button href="/">
+    <mat-icon>home</mat-icon>
+    Bodri-Bakery
+  </button>
+
+  <span class="fill-remaining-space" fxHide="false" fxHide.gt-sm></span>
+  <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+    <div *ngIf="authService.isLoggedIn">
+      <button mat-button routerLink="/user">Bodri-Bakery</button>
+      <button mat-button routerLink="/user/register">Bodri-Bakery</button>
+      <span>👨‍🍳{{ authService.user.nickname }}👩‍🍳</span>
+      <button mat-button (click)="logout()">Logout</button>
+    </div>
+    <div *ngIf="!authService.isLoggedIn">
+      <button mat-button routerLink="/login">Login</button>
+    </div>
+  </div>
+  <button mat-icon-button [matMenuTriggerFor]="menu" fxHide="false" fxHide.gt-sm>
+    <mat-icon>menu</mat-icon>
+  </button>
+</mat-toolbar>
+<mat-menu xPosition="before" #menu="matMenu">
+  <div *ngIf="authService.isLoggedIn">
+    <button mat-menu-item routerLink="/users">Kiskutya</button>
+    <button mat-menu-item routerLink="/users/register">New bodri</button>
+    <button mat-menu-item (click)="logout()">Logout</button>
+  </div>
+  <div *ngIf="!authService.isLoggedIn">
+    <button mat-menu-item routerLink="/login">Login</button>
+  </div>
+</mat-menu>
+
+<router-outlet></router-outlet>
