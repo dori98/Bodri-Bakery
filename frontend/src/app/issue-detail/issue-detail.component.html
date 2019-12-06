@@ -2,9 +2,9 @@
 <h1 class="display-2"> {{issue.name}}</h1>
 <div>
 <h3>Hozzávalók:</h3>
-<p><ng-container *ngFor="let ing of issue.ingredients" >
-  <p>{{ ing.name }}</p>
-</ng-container></p></div>
+<ul><ng-container *ngFor="let ing of issue.ingredients" >
+  <li>{{ ing.name }}</li>
+</ng-container></ul></div>
 
 <div>
 <h3>Leírás:</h3>
@@ -18,4 +18,4 @@
 
   
 
-<button mat-raised-button routerLink="/issues">Back</button>
+<button mat-raised-button routerLink="/issues" class="button">Back</button>

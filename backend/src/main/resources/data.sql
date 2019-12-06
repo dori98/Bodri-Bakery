@@ -1,9 +1,9 @@
 insert into user(id,username,password,nickname,enabled,role) values (1,'elso','$2a$10$ptitHYlcv7qGZXCpB8zCn.fIZM/K9LFIVWefgP8/MMXz2bXlzsjfa','Rebeka', false,'ROLE_USER');
 insert into user(id,username,password,nickname,enabled,role) values (2,'masodik','$2a$10$ptitHYlcv7qGZXCpB8zCn.fIZM/K9LFIVWefgP8/MMXz2bXlzsjfa','Mariska', false,'ROLE_USER');
-insert into user(id,username,password,nickname,enabled,role) values (6,'dori','$2a$10$ptitHYlcv7qGZXCpB8zCn.fIZM/K9LFIVWefgP8/MMXz2bXlzsjfa','Dóri', false,'ROLE_USER');
+insert into user(id,username,password,nickname,enabled,role) values (6,'dori','$2a$10$ptitHYlcv7qGZXCpB8zCn.fIZM/K9LFIVWefgP8/MMXz2bXlzsjfa','Dóri', false,'ROLE_ADMIN');
 
 insert into user(id,username,password,nickname,enabled,role) values (3,'harmadik','$2a$10$ptitHYlcv7qGZXCpB8zCn.fIZM/K9LFIVWefgP8/MMXz2bXlzsjfa','Erzsi', false,'ROLE_USER');
-insert into user(id,username,password,nickname,enabled,role) values (4,'negyedik','$2a$10$ptitHYlcv7qGZXCpB8zCn.fIZM/K9LFIVWefgP8/MMXz2bXlzsjfa','Laci',false,'ROLE_USER');
+insert into user(id,username,password,nickname,enabled,role) values (4,'isti','$2a$10$ptitHYlcv7qGZXCpB8zCn.fIZM/K9LFIVWefgP8/MMXz2bXlzsjfa','Istike',false,'ROLE_USER');
 insert into user(id,username,password,nickname,enabled,role) values (5,'otodik','$2a$10$ptitHYlcv7qGZXCpB8zCn.fIZM/K9LFIVWefgP8/MMXz2bXlzsjfa','Nagymami', false,'ROLE_USER');
 
 

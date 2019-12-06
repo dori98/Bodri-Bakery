@@ -7,8 +7,7 @@
   <span class="fill-remaining-space" fxHide="false" fxHide.gt-sm></span>
   <div fxLayout="row" fxShow="false" fxShow.gt-sm>
     <div *ngIf="authService.isLoggedIn">
-      <button mat-button routerLink="/user">Bodri-Bakery</button>
-      <button mat-button routerLink="/user/register">Bodri-Bakery</button>
+      
       <span>👨‍🍳{{ authService.user.nickname }}👩‍🍳</span>
       <button mat-button (click)="logout()">Logout</button>
     </div>

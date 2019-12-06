@@ -36,7 +36,7 @@ export class IssueListComponent implements OnInit {
 
   async onFormSubmit(issue: Issue): Promise<void> {
     if (issue.receiptId > 0) {
-      await this.issueService.updateIssue(issue)
+      //await this.issueService.updateIssue(issue)
       this.selectedIssue.nickname = issue.nickname;
       this.selectedIssue.segedrecept = issue.segedrecept;
       

@@ -33,6 +33,6 @@ export class IssueService {
   }*/
 
   deleteIssue(id): Promise<Issue> {
-    return this.http.delete<Issue>(`${this.issueUrl}/${id}`, httpOptions).toPromise();
+    return this.http.delete<Issue>(`${this.receiptUrl}/${id}`, httpOptions).toPromise();
   }
 }
