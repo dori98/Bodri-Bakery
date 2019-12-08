@@ -43,7 +43,12 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
  	* recept: egy édes vagy sós sütemény elkészítésének a menetét leíró jegyzet
  	
 
-* IDE: NetBeans ,IntelliJ
+* IDE: IntelliJ,Visual Studio Code	
+	* GitHub-ról töltsük le a frontendet és a backendet
+	* frontendet- visual studio code segítségével fordítsuk és futtassuk
+		* npm install
+		* npm start
+	* backendet- importoljuk be az InteliJ-be és fordítsuk és futtassuk
 * Database: H2
 * Használt technológiák:
 	* Java Spring Boot technológia 
@@ -58,27 +63,22 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
   	* ReceiptController
   	* UserController
 * entities
- 	 * customized
-   		 * CustomizedReceipt
   	 * Ingredient
- 	 * Receipt
- 	 * ReceiptDescription
- 	 * ReceiptIngredient
+ 	 * Receipt 	 
  	 * User
 * repositories
  	 * ReceiptRepository
  	 * UserRepository
-* response
- 	 * UserResponse
-* security
- 	 * AuthenticatedUser
+* security 	 
  	 * CustomBasicAuthenticationEntryPoint
  	 * MyUseDetailsService
  	 * WebSecurityConfig
 * services
 	
 ## Végpontok:
-* GET/receipts : publikus receptek lekérdezése
+* GET/rec/{id} : adott recept lekerdezese
+* GET/rec: felhasznalok és recepteik
+* POST/new: új recept
 * GET/users : userek lekérdezése
 * POST/users/register  :  regisztrációs adatok elküldése
 * POST/login : belépés adatok elküldése
@@ -90,7 +90,7 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 
 
 
-![Szekvencia diagram](/images/szekvencia.png)
+![Szekvencia diagram régi](/images/szekvencia.png)
 
 
 
