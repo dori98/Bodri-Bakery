@@ -90,7 +90,8 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 ## Diagrammok
 
 
-![uml diagram](images/uml_bodri-bakery.png)
+![uml diagram](images/usecase.png)
+![hasznalati eset diagram](images/use-case.png)
 
 
 
