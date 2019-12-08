@@ -4,15 +4,15 @@
     <mat-form-field>
       <input matInput
         type="text"
-        name="title"
-        [(ngModel)]="model.title"
-        aria-describedby="titleHelp"
-        placeholder="Enter title"
+        name="name"
+        [(ngModel)]="model.name"
+        aria-describedby="nameHelp"
+        placeholder="Enter name"
         required
-        #title="ngModel">
+        #name="ngModel">
     </mat-form-field>
-    <mat-error *ngIf="title.invalid && (title.dirty || title.touched) && title.errors.required">
-      Title is required!
+    <mat-error *ngIf="name.invalid && (name.dirty || name.touched) && name.errors.required">
+      Name is required!
     </mat-error>
   </div>
 
@@ -21,19 +21,18 @@
     <mat-form-field>
       <input matInput
         type="text"
-        name="location"
-        [(ngModel)]="model.location"
-        aria-describedby="locationHelp"
-        placeholder="Enter location"
+        name="difficulty"
+        [(ngModel)]="model.difficulty"
+        aria-describedby="difficultyHelp"
+        placeholder="Enter difficulty"
         required
-        pattern="PC\d+"
-        #location="ngModel">
+        #difficulty="ngModel">
     </mat-form-field>
-    <mat-error *ngIf="location.invalid && (location.dirty || location.touched) && location.errors.required">
-      Location is required!
+    <mat-error *ngIf="difficulty.invalid && (difficulty.dirty || difficulty.touched) && difficulty.errors.required">
+      Difficulty is required!
     </mat-error>
-    <mat-error *ngIf="location.invalid && (location.dirty || location.touched) && location.errors.pattern">
-      Location must start with PC...!
+    <mat-error *ngIf="difficulty.invalid && (difficulty.dirty || difficulty.touched) && difficulty.errors.pattern">
+      Difficulty must start with PC...!
     </mat-error>
   </div>
     
@@ -44,7 +43,7 @@
           name="description"
           [(ngModel)]="model.description"
           aria-describedby="descriptionHelp"
-          placeholder="Enter issue details">
+          placeholder="Enter details">
         </textarea>
       </mat-form-field>
     </div>

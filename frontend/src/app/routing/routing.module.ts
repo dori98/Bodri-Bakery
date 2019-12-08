@@ -19,7 +19,7 @@ const routes: Routes = [
     canActivate: [ AuthGuard ]
   },
   {
-    path: 'issues/add',
+    path: 'issues/new',
     component: IssueFormComponent
   },
   {

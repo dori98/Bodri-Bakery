@@ -35,18 +35,16 @@ public class Receipt {
     @Column(nullable = false)
     private String difficulty;
 
-    @Column(nullable = false)
+    @Column
     private Boolean salty;
 
-    @Column(nullable = false)
+    @Column
     private Boolean visibility;
 
     @Column(nullable = false,length=213123123)
-
     private String description;
 
     @ManyToMany
-
     private List<Ingredient> ingredients;
 
     @JsonIgnore

@@ -11,10 +11,8 @@ import hu.elte.bodribakery.repositories.ReceiptRepository;
 import hu.elte.bodribakery.repositories.UserRepository;
 import hu.elte.bodribakery.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @CrossOrigin
@@ -44,9 +42,18 @@ public class ReceiptController {
     public Receipt get(@PathVariable int id){
         return  receiptRepository.findById(id).get();
     }
+
     @GetMapping("/rec")
     public List<Receipt> getUserReceipts(){
         User actUser = userService.getActUser();
         return receiptRepository.findAllByUserId(actUser.getId());
     }
+
+    @PostMapping("/new")
+    public ResponseEntity newReceipt(@RequestBody Receipt receipt) {
+        receipt.setUser(userService.getActUser());
+        receiptRepository.save(receipt);
+        return ResponseEntity.ok().build();
+    }
+
 }

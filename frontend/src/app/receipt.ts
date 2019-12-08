@@ -2,7 +2,7 @@ import { Ingredient } from './ingredient';
 
 export class Receipt {
     public id : Number;
-    public  user_id: Number;
+    public user_id: Number;
     public difficulty: String;
     public name :String;
     public salty: Boolean;

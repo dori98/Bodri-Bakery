@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Issue } from "../issue";
+import { Receipt } from "../receipt";
 import { IssueService } from '../issue.service';
 
 @Component({
@@ -34,24 +35,28 @@ export class IssueListComponent implements OnInit {
     this.selectedIssue = issue;
   }
 
-  async onFormSubmit(issue: Issue): Promise<void> {
-    if (issue.receiptId > 0) {
+  async onFormSubmit(receipt: Receipt): Promise<void> {
+    // if (receipt.id > 0) {
       //await this.issueService.updateIssue(issue)
-      this.selectedIssue.nickname = issue.nickname;
-      this.selectedIssue.segedrecept = issue.segedrecept;
+      // this.selectedIssue.nickname = receipt.nickname;
+      // this.selectedIssue.segedrecept = receipt.segedrecept;
       
       
-    } else {
-      this.selectedIssue.receiptId = Math.floor(Math.random()*1000000);
-      this.selectedIssue.nickname = issue.nickname;
-      this.selectedIssue.segedrecept = issue.segedrecept;
+    // } else {
+      // this.selectedIssue.receiptId = Math.floor(Math.random()*1000000);
+      // this.selectedIssue.nickname = receipt.nickname;
+      // this.selectedIssue.segedrecept = receipt.segedrecept;
       
      // this.selectedIssue.status = 'NEW';
-      this.issueService.createIssue(issue)
-                        .then(createdIssue => {
-                          this.issues.push(createdIssue);
-                        });
-    }
+      // this.issueService.createIssue(receipt)
+      //                   .then(createdIssue => {
+      //                     this.issues.push(createdIssue);
+      //                   });
+
+    // }
+
+    this.issueService.createIssue(receipt);
+
     this.selectedIssue = null;
   }
   
