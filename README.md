@@ -41,7 +41,11 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
  	* Privát receptek biztonságos elrejtése a látogatók elől
 * Szakterületi fogalomjegyzék
  	* recept: egy édes vagy sós sütemény elkészítésének a menetét leíró jegyzet
- 	
+* Kliensoldali szolgáltatások:
+	* bejelentkezes
+	* felhasználó látja mely felhasználókhoz milyen recptek tartoznak
+	* bármely felhasználó receptjét meg tudja tekinteni
+	* képes receptet létrehozni így egy helye össze tudja gyűjteni receptjeit :D
 
 * IDE: IntelliJ,Visual Studio Code	
 	* GitHub-ról töltsük le a frontendet és a backendet
@@ -92,5 +96,14 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 
 ![Szekvencia diagram régi](/images/szekvencia.png)
 
-
+* Felhasználói dokumentáció:
+	* GitHubról letöltött bacendet és frontendet fordítsa és futtassa
+		* a backendet IntelliJ segítségével
+		* frontendet visual studio code segtségével
+			* terminálná használja a npm install majd npm start parancsokat
+	* Töltse be az oldalt Böngésző segítségével (localhost:4200)
+	* Bejelenkezes felhasználónév és jelszó segítségével	
+	* A receptnevek alatt található süteményekre kattintva kilistázhatjuk hogy az adott sütihez milyen hozzávalók kellenek, milyen nehéz elkészíteni és a leírását olvashatjuk
+	* ha visszalépünk akkor az új recept gombra kattintva új receptet adhatunk hozzá a profilunkhoz
+			
 
