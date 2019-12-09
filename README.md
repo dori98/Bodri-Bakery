@@ -113,4 +113,4 @@ Az adminisztrátor ezen felül adhat vagy elvehet moderátori jogot.
 			* Étel neve
 			* Nehézségi fokozat
 			* Leírás
-Az új receptet menteni a Mentés gomb megnyomásával lehet.
+		* Az új receptet menteni a Mentés gomb megnyomásával lehet.
